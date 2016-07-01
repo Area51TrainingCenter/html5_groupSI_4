@@ -1,0 +1,16 @@
+URL del Repositorio
+==========================
+https://github.com/Area51TrainingCenter/html5_groupSI_4
+
+
+Uno de los programas de Git
+===========================
+GIT-SCM
+
+Para copiar el repositorio
+===========================
+git clone https://github.com/Area51TrainingCenter/html5_groupSI_4.git
+
+Para sincronizar los archivos (tienen que estar dentro de la carpeta creada previamente)
+===========================
+git pull origin master
