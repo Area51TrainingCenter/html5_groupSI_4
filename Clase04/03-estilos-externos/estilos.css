@@ -1,0 +1,10 @@
+			p {font-family:Verdana; font-size:30px}
+
+			article {font-family:Arial; font-size:8px}
+			
+			/* Se queda con el último valor de font-family   */
+			article {font-family:Verdana; font-size:8px}
+
+			section {font-family:'Ricco Plask';font-size:200px}
+
+			div {font-family:Helvetica,ComicSans,Arial,'Ricco Plask'; font-size:21px}
