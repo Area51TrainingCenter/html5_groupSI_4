@@ -4,29 +4,33 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
+		* {
+			box-sizing: border-box;
+			font-family: Arial;
+		}
+
 		body {
 			margin:0;
 			padding:0;
 		}
 		.contenedor {
 			width:1200px;
-			height:1000px;
-			background-color: yellow;
+			/*background-color: yellow;*/
 			margin-left: auto;
 			margin-right: auto;
+			overflow: hidden;
 		}
 
 		.contenedorArticulo {
 			width:800px;
-			height: 700px;
-			background-color: green;
+			/*background-color: green;*/
 			float:left;
+			padding:80px;
 		}
 
 		.contenedorOtrosArticulos {
 			width:300px;
-			height: 700px;
-			background-color: pink;
+			/*background-color: pink;*/
 			float:right;
 		}
 
@@ -36,18 +40,17 @@
 
 		.contenedorAcercaAutor {
 			width:1200px;
-			height:300px;
-			background-color: salmon;
+			/*background-color: salmon;*/
+			overflow:hidden;
+			margin-bottom:20px;
 			/*float:left;*/
 		}
 
 		h1 {
-			font-family: Arial;
 			font-size:25px;
 		}
 
 		p {
-			font-family: Arial;
 			font-size:17px;
 		}
 
@@ -58,27 +61,31 @@
 		}
 
 		h2 {
-			font-family: Arial;
 			font-size:20px;
 		}
 
 		li {
-			font-family: Arial;
 			font-size:17px;
 		}
 
 		.foto {
-			width: 300px;
-			height: 300px;
 			float:left;
-			background-color: skyblue;
+			/*background-color: skyblue;*/
+			padding:20px;
 		}
 
 		.datosPersonales {
 			width: 300px;
-			height: 300px;
 			float:left;
-			background-color: brown;
+			/*background-color: brown;*/
+		}
+
+		h3 {
+			font-size:15px;
+		}
+
+		span {
+			color: blue;
 		}
 	</style>
 </head>
@@ -96,6 +103,10 @@
 			</div>
 
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur laboriosam vitae consequatur rem aperiam commodi recusandae tenetur mollitia accusantium deleniti culpa eos iste sunt a debitis, sapiente provident numquam voluptatum.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis autem est, cumque fugit rerum ex doloremque, et reiciendis dolorum, quibusdam deserunt natus laudantium qui? Maxime saepe, molestias quasi natus.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate incidunt adipisci quae aspernatur nesciunt distinctio voluptatibus, non ipsa quibusdam reprehenderit veniam dolore quaerat tempore. Aut, id! Suscipit eaque, doloribus optio.</p>
 
 		</div>
 
@@ -115,9 +126,18 @@
 		<div class="clearFix"></div>
 
 		<div class="contenedorAcercaAutor">
-			<div class="foto"></div>
+			<div class="foto">
+				<img src="usuario.jpg">
+			</div>
 
-			<div class="datosPersonales"></div>
+			<div class="datosPersonales">
+				<h3>Nombre del autor</h3>
+
+				<p>
+					Ocupación: <span>Freelancer</span>
+				</p>
+
+			</div>
 
 
 		</div>
