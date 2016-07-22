@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			font-family: Arial;
+		}
+
+		body {
+			margin:0;
+			padding:0;
+		}
+		.contenedor {
+			width:1200px;
+			/*background-color: yellow;*/
+			margin-left: auto;
+			margin-right: auto;
+			overflow: hidden;
+		}
+
+		/*Inicio: Contenedor Artículo*/
+
+		.contenedorArticulo {
+			width:800px;
+			float:left;
+			padding:80px;
+			position: relative;
+		}
+
+			.contenedorArticulo .fecha {
+				position: absolute;
+				top:5px;
+				right:20px;
+				font-weight: bold;
+			}
+
+			.contenedorArticulo h1 {
+				font-size:25px;
+			}
+
+			.contenedorArticulo p {
+				font-size:17px;
+			}
+
+			.contenedorArticulo	.ilustracion {
+			width:650px;
+			height: 360px;
+			margin:0 auto;
+		}
+
+		/*Fin: Contenedor Artículo*/
+
+
+		/*Inicio: Contenedor Otros Artículos*/
+
+		.contenedorOtrosArticulos {
+			width:300px;
+			/*background-color: pink;*/
+			float:right;
+		}
+
+			.contenedorOtrosArticulos h1 {
+				font-size: 20px;
+			}
+
+			.contenedorOtrosArticulos h2 {
+				font-size:20px;
+			}
+
+			.contenedorOtrosArticulos li {
+				font-size:17px;
+			}
+
+
+			.contenedorOtrosArticulos a,
+			.contenedorOtrosArticulos a:link,
+			.contenedorOtrosArticulos a:visited,
+			.contenedorOtrosArticulos a:active {
+				color:black;
+				text-decoration: none;
+			}
+
+			.contenedorOtrosArticulos a:hover {
+				text-decoration: underline;
+			}
+
+/*			.contenedorOtrosArticulos a:link {
+				color:red;
+			}
+
+			.contenedorOtrosArticulos a:active {
+				color:brown;
+				font-size:30px;
+			}
+
+			.contenedorOtrosArticulos a:hover {
+				color:green;
+				text-decoration: underline;
+				background-color: #ccc
+			}
+
+			.contenedorOtrosArticulos a:visited {
+				color:orange;
+			}*/
+
+		/*Fin: Contenedor Otros Artículos*/
+
+
+		.clearFix {
+			clear:both;
+		}
+
+		/*Inicio: Contenedor Acerca Autor*/
+
+		.contenedorAcercaAutor {
+			width:1200px;
+			/*background-color: salmon;*/
+			overflow:hidden;
+			margin-bottom:20px;
+			/*float:left;*/
+		}
+
+			.contenedorAcercaAutor .foto {
+				float:left;
+				/*background-color: skyblue;*/
+				padding:20px;
+			}
+
+			.contenedorAcercaAutor .datosPersonales {
+				width: 300px;
+				float:left;
+				/*background-color: brown;*/
+			}
+
+	/*		.datosPersonales h1
+			.contenedorDatosPersonales .datosPersonales h1
+			.contenedorDatosPersonales h1
+			.contenedorDatosPersonales div h1*/
+
+
+				.contenedorAcercaAutor .datosPersonales h3 {
+					font-size:15px;
+				}
+
+				.contenedorAcercaAutor .datosPersonales span {
+					color: blue;
+				}
+		/*Fin: Contenedor Acerca Autor*/
+
+	</style>
+</head>
+<body>
+
+	<div class="contenedor">
+
+		<div class="contenedorArticulo">
+			<div class="fecha">21 de julio de 2016</div>
+
+			<h1>Título del artículo</h1>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iusto iure laborum, incidunt reprehenderit recusandae cupiditate veritatis dolore delectus impedit, aspernatur sint dolor hic nisi suscipit! Maxime voluptate, cupiditate veniam.</p>
+
+			<div class="ilustracion">
+				<img src="mapamundi.jpg">
+			</div>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur laboriosam vitae consequatur rem aperiam commodi recusandae tenetur mollitia accusantium deleniti culpa eos iste sunt a debitis, sapiente provident numquam voluptatum.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis autem est, cumque fugit rerum ex doloremque, et reiciendis dolorum, quibusdam deserunt natus laudantium qui? Maxime saepe, molestias quasi natus.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate incidunt adipisci quae aspernatur nesciunt distinctio voluptatibus, non ipsa quibusdam reprehenderit veniam dolore quaerat tempore. Aut, id! Suscipit eaque, doloribus optio.</p>
+
+		</div>
+
+		<div class="contenedorOtrosArticulos">
+			<h1>Otros artículos</h1>
+
+			<ul>
+				<li><a href="#">Artículo 1</a></li>
+				<li><a href="#">Artículo 2</a></li>
+				<li><a href="#">Artículo 3</a></li>
+				<li><a href="#">Artículo 4</a></li>
+			</ul>
+
+
+		</div>
+
+		<div class="clearFix"></div>
+
+		<div class="contenedorAcercaAutor">
+			<div class="foto">
+				<img src="usuario.jpg">
+			</div>
+
+			<div class="datosPersonales">
+				<h1>Nombre del autor</h1>
+
+				<p>
+					Ocupación: <span>Freelancer</span>
+				</p>
+
+			</div>
+
+
+		</div>
+
+	</div>
+	
+</body>
+</html>
