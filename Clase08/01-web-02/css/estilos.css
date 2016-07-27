@@ -1,13 +1,20 @@
+* {
+	font-family:Arial;
+	box-sizing: border-box;
+}
+
 body {
 	margin:0;
 	padding:0;
+
 }
 
 .contenedorPrincipal {
 	width: 100%;
 	background-image: url(../imagenes/linea_fondo.jpg);
 	background-repeat: repeat-x;
-	min-height: 600px
+	min-height: 600px;
+	background-color: #c4c0bf
 }
 	.contenedorPrincipal .contenedor {
 		width: 950px;
@@ -16,7 +23,6 @@ body {
 
 		.contenedorPrincipal header {
 			width:100%;
-			background-color: yellow;
 			padding-top:20px;
 			overflow: hidden;
 		}
@@ -26,9 +32,71 @@ body {
 				float:left;
 			}
 
-			.contenedorPrincipal header nav {
+			.contenedorPrincipal nav {
 				float:right;
 			}
+
+				.contenedorPrincipal nav ul {
+					margin:0;
+					padding:0;
+					list-style: none;
+					list-style-type: none;
+					font-size:0;
+				}
+
+				.contenedorPrincipal nav li {
+					display:inline-block;
+
+				}
+
+					.contenedorPrincipal nav li a,
+					.contenedorPrincipal nav li a:link,
+					.contenedorPrincipal nav li a:visited,
+					.contenedorPrincipal nav li a:active {
+						color:#7d7978;
+						text-decoration: none;
+						text-transform: uppercase;
+						font-size:12px;
+						font-weight: bold;
+						padding-top:7px;
+						padding-left:10px;
+						padding-right: 10px;
+						padding-bottom:7px;
+						display: block;
+						width:100%;
+					}
+
+					.contenedorPrincipal nav li a:hover {
+						color:#211f20;
+					}
+
+		.contenedorPrincipal .caracteristicas {
+			width:100%;
+			padding:32px;
+			background-color: #fff;
+			border: 1px solid #c5c3c4;
+			overflow: hidden;
+		}
+
+			.contenedorPrincipal .caracteristicas .imagen {
+				float:left;
+				padding:6px;
+				background-color: #d2d2d2;
+				font-size:0;
+				border: 1px solid #b4b4b4;
+			}
+
+				.contenedorPrincipal .caracteristicas .imagen img {
+					width:398px;
+					border: 1px solid #b4b4b4;
+				}
+
+			.contenedorPrincipal .caracteristicas .texto {
+				float:right;
+				width:398px;
+				min-height: 248px;
+				background-color: green;
+			}			
 
 .pie {
 	width:100%;
