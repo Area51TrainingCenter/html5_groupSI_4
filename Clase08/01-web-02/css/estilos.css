@@ -16,9 +16,19 @@ body {
 
 		.contenedorPrincipal header {
 			width:100%;
-			min-height: 400px;
 			background-color: yellow;
+			padding-top:20px;
+			overflow: hidden;
 		}
+
+			.contenedorPrincipal header .logo {
+				width:194px;
+				float:left;
+			}
+
+			.contenedorPrincipal header nav {
+				float:right;
+			}
 
 .pie {
 	width:100%;
