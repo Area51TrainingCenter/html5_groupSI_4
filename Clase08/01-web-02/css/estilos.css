@@ -1,0 +1,25 @@
+body {
+	margin:0;
+	padding:0;
+}
+
+.contenedorPrincipal {
+	width: 100%;
+	background-image: url(../imagenes/linea_fondo.jpg);
+	background-repeat: repeat-x;
+	min-height: 600px
+}
+	.contenedorPrincipal .contenedor {
+		width: 950px;
+		margin:0 auto;
+	}
+
+		.contenedorPrincipal header {
+			width:100%;
+			min-height: 400px;
+			background-color: yellow;
+		}
+
+.pie {
+	width:100%;
+}
