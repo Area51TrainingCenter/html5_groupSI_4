@@ -94,9 +94,33 @@ body {
 			.contenedorPrincipal .caracteristicas .texto {
 				float:right;
 				width:398px;
-				min-height: 248px;
-				background-color: green;
-			}			
+				padding-top:40px;
+			}	
+
+				.contenedorPrincipal .caracteristicas .texto h1 {
+					margin:0;
+					padding:0;
+					color:#1c1c1c;
+					font-size:30px;
+				}
+
+				.contenedorPrincipal .caracteristicas .texto p {
+					margin:0;
+					color: #545454;
+					font-size:10px;
+				}		
+
+					.contenedorPrincipal .caracteristicas .texto p span {
+						color: #0081f0;
+					}
+
+				.contenedorPrincipal .caracteristicas .texto section {
+					color:#a1a29d;
+					font-size:15px;
+					text-align: justify;
+					margin-top:30px;
+				}
+					
 
 .pie {
 	width:100%;
