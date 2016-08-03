@@ -1,0 +1,162 @@
+* {
+	font-family:Arial;
+	box-sizing: border-box;
+}
+
+body {
+	margin:0;
+	padding:0;
+
+}
+
+.contenedorPrincipal {
+	width: 100%;
+	background-image: url(../imagenes/linea_fondo.jpg);
+	background-repeat: repeat-x;
+	min-height: 600px;
+	background-color: #c4c0bf
+}
+	.contenedorPrincipal .contenedor {
+		width: 950px;
+		margin:0 auto;
+	}
+
+		.contenedorPrincipal header {
+			width:100%;
+			padding-top:20px;
+			overflow: hidden;
+		}
+
+			.contenedorPrincipal header .logo {
+				width:194px;
+				float:left;
+			}
+
+			.contenedorPrincipal nav {
+				float:right;
+			}
+
+				.contenedorPrincipal nav ul {
+					margin:0;
+					padding:0;
+					list-style: none;
+					list-style-type: none;
+					font-size:0;
+				}
+
+				.contenedorPrincipal nav li {
+					display:inline-block;
+
+				}
+
+					.contenedorPrincipal nav li a,
+					.contenedorPrincipal nav li a:link,
+					.contenedorPrincipal nav li a:visited,
+					.contenedorPrincipal nav li a:active {
+						color:#7d7978;
+						text-decoration: none;
+						text-transform: uppercase;
+						font-size:12px;
+						font-weight: bold;
+						padding-top:7px;
+						padding-left:10px;
+						padding-right: 10px;
+						padding-bottom:7px;
+						display: block;
+						width:100%;
+					}
+
+					.contenedorPrincipal nav li a:hover {
+						color:#211f20;
+					}
+
+		.contenedorPrincipal .caracteristicas {
+			width:100%;
+			padding:32px;
+			background-color: #fff;
+			border: 1px solid #c5c3c4;
+			position:relative;
+		}
+
+			.contenedorPrincipal .caracteristicas .imagen {
+				display:inline-block;
+				padding:6px;
+				background-color: #d2d2d2;
+				font-size:0;
+				border: 1px solid #b4b4b4;
+				margin-right: 50px;
+			}
+
+				.contenedorPrincipal .caracteristicas .imagen img {
+					width:398px;
+					border: 1px solid #b4b4b4;
+				}
+
+			.contenedorPrincipal .caracteristicas .texto {
+				display:inline-block;
+				width:398px;
+				padding-top:40px;
+				vertical-align: top;
+			}	
+
+				.contenedorPrincipal .caracteristicas .texto h1 {
+					margin:0;
+					padding:0;
+					color:#1c1c1c;
+					font-size:30px;
+				}
+
+				.contenedorPrincipal .caracteristicas .texto p {
+					margin:0;
+					color: #545454;
+					font-size:10px;
+				}		
+
+					.contenedorPrincipal .caracteristicas .texto p span {
+						color: #0081f0;
+					}
+
+				.contenedorPrincipal .caracteristicas .texto section {
+					color:#a1a29d;
+					font-size:15px;
+					text-align: justify;
+					margin-top:30px;
+				}
+
+			.contenedorPrincipal .caracteristicas .franjaCaracteristicas {
+				width:149px;
+				height:87px;
+				position: absolute;
+				top: -4px;
+				right: -4px;
+			}
+
+			.contenedorPrincipal .caracteristicas .boton {
+				position:absolute;
+				right:53px;
+				bottom:30px;
+				font-size:8px;
+				font-weight: bold;
+				padding:8px;
+				color:white;
+				text-transform: uppercase;
+				background-image: url(../imagenes/button_bg.jpg);
+				background-repeat: repeat-x;
+				cursor: pointer;
+			}
+
+
+		.contenedorPrincipal .proyectosRecientes {
+			width: 580px;
+			margin-right: 17px;
+			display: inline-block;
+		}	
+
+		.contenedorPrincipal .intro {
+			width:309px;
+			display: inline-block;	
+		}		
+
+.pie {
+	width:100%;
+}
