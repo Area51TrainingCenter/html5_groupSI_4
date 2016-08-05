@@ -6,6 +6,7 @@
 body {
 	margin:0;
 	padding:0;
+	background-color: #c4c0bf
 
 }
 
@@ -153,6 +154,7 @@ body {
 			width: 580px;
 			margin-right: 17px;
 			display: inline-block;
+			vertical-align: top;
 		}	
 
 			.contenedorPrincipal .proyecto {
@@ -160,6 +162,7 @@ body {
 				background-color: #e3dddd;
 				padding: 19px;
 				border: 1px solid #a4a09f;
+				position: relative;
 			}
 
 				.contenedorPrincipal .proyecto .imagenProyecto {
@@ -183,12 +186,70 @@ body {
 						font-size: 13px;
 					}
 
+				.contenedorPrincipal .proyecto .franja {
+					position: absolute;
+					top: -4px;
+					right: -4px;
+				}
+
 /* INTRO */
 		.contenedorPrincipal .intro {
 			width:309px;
 			display: inline-block;	
-		}		
+			vertical-align: top;
+		}	
 
+			.contenedorPrincipal .intro p {
+				line-height: 25px;
+				color: #837f7c;
+			}	
+
+				.contenedorPrincipal .intro p span {
+					color: #256291;
+				}
+
+/* PIE */
 .pie {
 	width:100%;
+	margin-top:65px;
+	background-image: url(../imagenes/background_footer.jpg);
+	background-repeat: repeat-x;
+	background-color: #131210
 }
+
+	.pie footer {
+		width: 950px;
+		margin: 0 auto;
+		font-size: 0;
+		padding-bottom:30px;
+	}
+
+
+
+		.pie footer .columna {
+			width: 200px;
+			margin-right:50px;
+			display: inline-block;
+			vertical-align: top;
+			margin-top:30px;
+			color: white;
+			font-size:14px;
+		}
+
+		.pie footer .col-duplex {
+			width:450px;
+		}
+
+/*		.pie footer .sinMargen {
+			margin-right:0;
+		}	*/	
+
+
+/*		.pie footer .columna.sinMargen {
+			margin-right:0;
+		}		*/	
+
+		.sinMargen {
+			margin-right: 0 !important
+		}
+
