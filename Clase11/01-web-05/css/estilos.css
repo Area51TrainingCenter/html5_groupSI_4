@@ -1,0 +1,138 @@
+
+		.contenedorPrincipal .caracteristicas {
+			width:100%;
+			padding:32px;
+			background-color: #fff;
+			border: 1px solid #a4a09f;
+			position:relative;
+			margin-bottom:17px;
+		}
+
+			.contenedorPrincipal .caracteristicas .imagen {
+				display:inline-block;
+				padding:6px;
+				background-color: #d2d2d2;
+				font-size:0;
+				border: 1px solid #b4b4b4;
+				margin-right: 50px;
+			}
+
+				.contenedorPrincipal .caracteristicas .imagen img {
+					width:398px;
+					border: 1px solid #b4b4b4;
+				}
+
+			.contenedorPrincipal .caracteristicas .texto {
+				display:inline-block;
+				width:398px;
+				padding-top:40px;
+				vertical-align: top;
+			}	
+
+				.contenedorPrincipal .caracteristicas .texto h1 {
+					margin:0;
+					padding:0;
+					color:#1c1c1c;
+					font-size:30px;
+				}
+
+				.contenedorPrincipal .caracteristicas .texto p {
+					margin:0;
+					color: #545454;
+					font-size:10px;
+				}		
+
+					.contenedorPrincipal .caracteristicas .texto p span {
+						color: #0081f0;
+					}
+
+				.contenedorPrincipal .caracteristicas .texto section {
+					color:#a1a29d;
+					font-size:15px;
+					text-align: justify;
+					margin-top:30px;
+				}
+
+			.contenedorPrincipal .caracteristicas .franjaCaracteristicas {
+				width:149px;
+				height:87px;
+				position: absolute;
+				top: -4px;
+				right: -4px;
+			}
+
+			.contenedorPrincipal .caracteristicas .boton {
+				position:absolute;
+				right:53px;
+				bottom:30px;
+				font-size:8px;
+				font-weight: bold;
+				padding:8px;
+				color:white;
+				text-transform: uppercase;
+				background-image: url(../imagenes/button_bg.jpg);
+				background-repeat: repeat-x;
+				cursor: pointer;
+			}
+
+
+/* PROYECTOS RECIENTES*/
+
+		.contenedorPrincipal .proyectosRecientes {
+			width: 580px;
+			margin-right: 17px;
+			display: inline-block;
+			vertical-align: top;
+		}	
+
+			.contenedorPrincipal .proyecto {
+				margin-bottom: 10px;
+				background-color: #e3dddd;
+				padding: 19px;
+				border: 1px solid #a4a09f;
+				position: relative;
+			}
+
+				.contenedorPrincipal .proyecto .imagenProyecto {
+					display: inline-block;
+					width:100px;
+					margin-right:16px;
+					vertical-align: top;
+				}
+
+				.contenedorPrincipal .proyecto .textoProyecto {
+					display: inline-block;
+					width:308px;
+					vertical-align: top;
+				}
+
+					.contenedorPrincipal .proyecto .textoProyecto h2 {
+						font-size: 15px;
+					}
+
+					.contenedorPrincipal .proyecto .textoProyecto p {
+						font-size: 13px;
+					}
+
+				.contenedorPrincipal .proyecto .franja {
+					position: absolute;
+					top: -4px;
+					right: -4px;
+				}
+
+/* INTRO */
+		.contenedorPrincipal .intro {
+			width:309px;
+			display: inline-block;	
+			vertical-align: top;
+		}	
+
+			.contenedorPrincipal .intro p {
+				line-height: 25px;
+				color: #837f7c;
+			}	
+
+				.contenedorPrincipal .intro p span {
+					color: #256291;
+				}
+
