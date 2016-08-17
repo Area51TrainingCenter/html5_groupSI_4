@@ -1,0 +1,51 @@
+body {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+	width:100%;
+	font-size: 0;
+	display: none;
+}
+
+li {
+	width:100%;
+	font-size: 25px;
+	display: inline-block;
+}
+
+div {
+	position: absolute;
+	top: 0;
+	right:0;
+	padding:10px;
+	border: 1px solid black;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Arial;
+	display: block;
+}
+
+
+
+@media screen and (min-width:392px) {
+	li {
+		width: 33.33333333333333%
+	}
+
+	div {
+		display: none;
+	}
+}
+
+@media screen and (min-width:580px) {
+	ul	{display: block;}
+	li {
+		width: 16.66666666666667%
+	}
+}
