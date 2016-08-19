@@ -38,14 +38,16 @@ div {
 		width: 33.33333333333333%
 	}
 
-	div {
-		display: none;
-	}
+
 }
 
 @media screen and (min-width:580px) {
 	ul	{display: block;}
 	li {
 		width: 16.66666666666667%
+	}
+
+	div {
+		display: none;
 	}
 }

@@ -1,0 +1,54 @@
+body {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.contenedorPrincipal {
+	background-color: red;
+}
+	.contenedorPrincipal header {
+		position: relative;
+	}
+
+		.contenedorPrincipal header .logo {
+			text-align: center;
+		}
+
+		.contenedorPrincipal header .menuMovil {
+			position: absolute;
+			right:5px;
+			top:5px;
+			width:60px;
+			height: 60px;
+			background-color: yellow;
+		}
+
+		.contenedorPrincipal header img {
+			width:100%;
+			max-width:194px;
+/*			margin:0 auto;
+			display: block;*/
+		}
+
+		.contenedorPrincipal header nav {
+			display: none;
+		}
+
+		.contenedorPrincipal .caracteristicas {
+			text-align: center;
+		}
+
+		.contenedorPrincipal .imagen img {
+			width:100%;
+			max-width: 398px;
+		}
+
+		.contenedorPrincipal .texto {
+			padding:15px;
+		}
+
+
+.pie {
+	background-color: green;
+}
