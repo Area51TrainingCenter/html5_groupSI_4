@@ -56,12 +56,15 @@ body {
 		}
 
 		.contenedorPrincipal .caracteristicas .texto p {
-			font-size:11px;
+			font-size:17px;
 		}
 
 		.contenedorPrincipal .caracteristicas .texto p span {
 			color: #0081f0;
-		
+		}
+
+		.contenedorPrincipal .caracteristicas .texto section {
+			font-size:17px;
 		}
 
 		.contenedorPrincipal .caracteristicas .boton {
@@ -118,11 +121,11 @@ body {
 		}
 
 		.contenedorPrincipal .proyectosRecientes .textoProyecto h1 {
-			font-size:14px;
+			font-size:18px;
 		}
 
 		.contenedorPrincipal .proyectosRecientes .textoProyecto p {
-			font-size: 13px;
+			font-size: 17px;
 			color: #827e7b;
 		}
 
@@ -137,7 +140,7 @@ body {
 		}
 
 		.contenedorPrincipal .intro p {
-			font-size: 14px;
+			font-size: 18px;
 			line-height: 22px;
 			color: #827e7b;
 		}
@@ -156,7 +159,7 @@ body {
 .pie footer {
 	padding:8px;
 	color:#e6e2e1;
-	font-size: 14px;
+	font-size: 17px;
 }
 
 .pie footer .columna {
@@ -187,3 +190,105 @@ body {
 .pie footer .columna ul a:hover {
 	text-decoration: underline;
 }
+
+/* VERSIÓN TABLETA*/
+@media screen and (min-width:700px) {
+
+		.contenedorPrincipal header .menuMovil {
+			display:none;
+		}
+
+		.contenedorPrincipal header nav {
+			display: block;
+		}
+
+				.contenedorPrincipal nav ul {
+					margin:0;
+					padding:0;
+					list-style: none;
+					list-style-type: none;
+					font-size:0;
+				}
+
+				.contenedorPrincipal nav li {
+					display:inline-block;
+					width:20%;
+
+				}
+
+					.contenedorPrincipal nav li a,
+					.contenedorPrincipal nav li a:link,
+					.contenedorPrincipal nav li a:visited,
+					.contenedorPrincipal nav li a:active {
+						color:#7d7978;
+						text-decoration: none;
+						text-transform: uppercase;
+						font-size:12px;
+						font-weight: bold;
+						padding-top:7px;
+						padding-left:10px;
+						padding-right: 10px;
+						padding-bottom:7px;
+						display: block;
+						width:87%;
+						text-align: center;
+					}
+
+					.contenedorPrincipal nav li a:hover {
+						color:red;
+					}
+
+					.contenedorPrincipal .caracteristicas {
+						overflow: hidden;
+					}
+
+					.contenedorPrincipal .caracteristicas .texto {
+						width:45%;
+						float:right;
+					}
+
+					.contenedorPrincipal .caracteristicas .imagen {
+						width:45%;
+						float:left;
+					}
+
+					.contenedorPrincipal .caracteristicas .texto .boton {
+						display: block;
+						float:right;
+					}
+
+					.contenedorPrincipal .caracteristicas .boton {
+						display: none;
+					}
+
+					.contenedorPrincipal .proyectosRecientes {
+						font-size: 0
+					}
+
+					.contenedorPrincipal .proyectosRecientes .imagenProyecto {
+						width:30%;
+						display: inline-block;
+					}
+
+					.contenedorPrincipal .proyectosRecientes .textoProyecto {
+						width:70%;
+						display: inline-block;
+						text-align: left;
+					}
+
+					.contenedorPrincipal .proyectosRecientes .textoProyecto h2 {
+						font-size:18px;
+					}
+
+					.pie footer div.columna:nth-child(2),
+					.pie footer div.columna:nth-child(3) {
+						float:left;
+						width:50%;
+					}
+
+					.pie footer {
+						overflow: hidden
+					}
+}
+
+/*Versión Desktop*/
