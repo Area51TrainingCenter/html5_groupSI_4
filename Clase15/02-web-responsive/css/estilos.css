@@ -292,3 +292,56 @@ body {
 }
 
 /*Versión Desktop*/
+@media screen and (min-width: 950px) {
+	.contenedorPrincipal .contenedor,
+	.pie footer {
+		width:950px;
+		margin:0 auto;
+		overflow: hidden
+	}
+	.contenedorPrincipal header {
+		overflow: hidden;
+	}
+	.contenedorPrincipal header .logo {
+		width:15%;
+		float:left;
+		text-align: left
+	}
+
+	.contenedorPrincipal header nav {
+		width:70%;
+		float: right;
+	}
+
+	.contenedorPrincipal .proyectosRecientes {
+		float:left;
+		width:60%;
+	}
+
+	.contenedorPrincipal .intro {
+		float:left;
+		width:38%;
+	}
+
+	.pie footer {
+		font-size: 0;
+	}
+
+	.pie footer div.columna {
+		font-size:20px;
+		vertical-align: top
+	}
+
+	.pie footer div.columna:nth-child(2),
+	.pie footer div.columna:nth-child(3) {
+		width:25%;
+		display: inline-block;
+		float:none;
+	}
+
+	.pie footer div.col-duplex {
+		width:50%;
+		display: inline-block;
+		float:none;
+	}
+}
