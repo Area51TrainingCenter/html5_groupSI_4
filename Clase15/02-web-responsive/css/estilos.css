@@ -1,0 +1,189 @@
+* {
+	font-family: Arial;
+}
+
+body {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.contenedorPrincipal {
+	background-image: url(../imagenes/linea_fondo.jpg);
+	background-repeat: repeat-x;
+	background-color: #c4c0bf;
+	padding-top:20px;
+}
+	.contenedorPrincipal header {
+		position: relative;
+		margin-bottom:20px;
+	}
+
+		.contenedorPrincipal header .logo {
+			text-align: center;
+		}
+
+		.contenedorPrincipal header .menuMovil {
+			position: absolute;
+			right:5px;
+			top:5px;
+			width:60px;
+			height: 60px;
+			background-color: yellow;
+		}
+
+		.contenedorPrincipal header img {
+			width:100%;
+			max-width:194px;
+/*			margin:0 auto;
+			display: block;*/
+		}
+
+		.contenedorPrincipal header nav {
+			display: none;
+		}
+
+		.contenedorPrincipal .caracteristicas {
+			text-align: center;
+			position: relative;
+	    	background-color: #fff;
+    		border: 1px solid #a4a09f;
+    		padding:15px;
+		}
+
+		.contenedorPrincipal .caracteristicas .texto {
+			text-align: justify;
+		}
+
+		.contenedorPrincipal .caracteristicas .texto p {
+			font-size:11px;
+		}
+
+		.contenedorPrincipal .caracteristicas .texto p span {
+			color: #0081f0;
+		
+		}
+
+		.contenedorPrincipal .caracteristicas .boton {
+			padding:15px;
+			background-image: url(../imagenes/button_bg.jpg);
+			background-repeat: repeat-x;
+			/*background-size: cover;*/
+			font-size:13px;
+			color: #fff;
+			text-transform: uppercase;
+			width:100px;
+			margin:0 auto;
+		}
+
+		.contenedorPrincipal .imagen {
+			margin-top:20px;
+		}
+
+		.contenedorPrincipal .imagen img {
+			width:100%;
+			max-width: 398px;
+		}
+
+
+		.contenedorPrincipal .texto {
+			padding:15px;
+		}
+
+		.contenedorPrincipal .franjaCaracteristicas {
+			position: absolute;
+			top:0;
+			right: 0;
+			width: 100px;
+		}
+
+		.contenedorPrincipal .franjaCaracteristicas img {
+			width:100%;
+		}
+
+		.contenedorPrincipal .proyectosRecientes .proyecto {
+			padding: 8px;
+			margin-bottom:6px;
+			margin-top: 6px;
+			background-color: #e3dddd;
+			position: relative;
+		}
+
+		.contenedorPrincipal .proyectosRecientes .imagenProyecto {
+			text-align: center;
+		}
+
+		.contenedorPrincipal .proyectosRecientes .textoProyecto {
+			text-align: center
+		}
+
+		.contenedorPrincipal .proyectosRecientes .textoProyecto h1 {
+			font-size:14px;
+		}
+
+		.contenedorPrincipal .proyectosRecientes .textoProyecto p {
+			font-size: 13px;
+			color: #827e7b;
+		}
+
+		.contenedorPrincipal .proyectosRecientes .franja {
+			position: absolute;
+			top:0;
+			right:0;
+		}
+
+		.contenedorPrincipal .intro {
+			padding:8px;
+		}
+
+		.contenedorPrincipal .intro p {
+			font-size: 14px;
+			line-height: 22px;
+			color: #827e7b;
+		}
+
+		.contenedorPrincipal .intro p span {
+			color: #5484b2;
+		}
+
+
+.pie {
+	background-color: #131210;
+	border-top: 5px solid #060604;
+	
+}
+
+.pie footer {
+	padding:8px;
+	color:#e6e2e1;
+	font-size: 14px;
+}
+
+.pie footer .columna {
+	width:100%;
+}
+
+.pie footer .columna h2 {
+	text-transform: uppercase;
+}
+
+.pie footer .columna ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+.pie footer .columna ul a,
+.pie footer .columna ul a:link,
+.pie footer .columna ul a:active,
+.pie footer .columna ul a:visited {
+	text-decoration: none;
+	color: #00aef0;
+	font-size:20px;
+	line-height: 35px;
+}
+
+
+.pie footer .columna ul a:hover {
+	text-decoration: underline;
+}
