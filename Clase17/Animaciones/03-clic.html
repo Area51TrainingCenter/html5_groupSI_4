@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title></title>
-
 	<style type="text/css">
 		div.caja {
 			width:100px;
@@ -18,40 +17,34 @@
 			margin:20px;
 		}
 
-		div.caja:hover {
-			animation: 10s cambioColor 1;
+		div:hover {
+			animation: 3s clic 1;
 		}
 
-		@keyframes cambioColor {
-			25% {
-				background-color: purple
+		@keyframes clic {
+			20% {
+				transform: scale(.7);
 			}
 
-			75% {
-				background-color: pink
+			40% {
+				transform: scale(1);
 			}
 
-			100% {
-				background-color: red
-			}
-		}		
-
-/*		@keyframes cambioColor {
-			from {
-				background-color: blue
+			80% {
+				transform: scale(1);
 			}
 
-			to {
-				background-color: green
+			90% {
+				transform: scale(.7);
 			}
-		}*/
+
+		}
 
 	</style>
-
 </head>
 <body>
 
-	<div class="caja"></div>
+	<div class="caja">Clic</div>
 
 </body>
 </html>

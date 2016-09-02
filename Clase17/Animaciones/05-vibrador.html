@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div.caja {
+			width:100px;
+			padding:20px 40px;
+			background-color: red;
+			font-family: Arial;
+			color: white;
+			font-size: 20px;
+			text-transform: uppercase;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			margin:20px;
+		}
+
+		div:hover {
+			animation: 0.7s vibrador infinite;
+		}
+
+		@keyframes vibrador {
+			20% {
+				transform: translateX(-10px);
+			}
+
+			30% {
+				transform: translateY(-10px);
+			}
+
+			40% {
+				transform: translateX(10px);
+			}
+
+			30% {
+				transform: translateY(10px);
+			}
+
+			60% {
+				transform: translateX(-10px);
+			}
+
+			70% {
+				transform: translateY(-10px);
+			}
+
+			80% {
+				transform: translateX(10px);
+			}
+
+			90% {
+				transform: translateY(10px);
+			}
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="caja">Clic</div>
+
+</body>
+</html>

@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title></title>
-
 	<style type="text/css">
 		div.caja {
 			width:100px;
@@ -16,42 +15,37 @@
 			display: inline-block;
 			vertical-align: middle;
 			margin:20px;
+			transform-origin: center top
 		}
 
-		div.caja:hover {
-			animation: 10s cambioColor 1;
+		div:hover {
+			animation: 1s cartel infinite;
 		}
 
-		@keyframes cambioColor {
-			25% {
-				background-color: purple
+		@keyframes cartel {
+			20% {
+				transform: rotate(15deg)
 			}
 
-			75% {
-				background-color: pink
+			40% {
+				transform: rotate(-13deg);
 			}
 
-			100% {
-				background-color: red
-			}
-		}		
-
-/*		@keyframes cambioColor {
-			from {
-				background-color: blue
+			60% {
+				transform: rotate(10deg);
 			}
 
-			to {
-				background-color: green
+			80% {
+				transform: rotate(-5deg);
 			}
-		}*/
+
+		}
 
 	</style>
-
 </head>
 <body>
 
-	<div class="caja"></div>
+	<div class="caja">Clic</div>
 
 </body>
 </html>

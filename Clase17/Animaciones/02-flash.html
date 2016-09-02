@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title></title>
-
 	<style type="text/css">
 		div.caja {
 			width:100px;
@@ -16,42 +15,32 @@
 			display: inline-block;
 			vertical-align: middle;
 			margin:20px;
+			animation: 1s flash 1;
 		}
 
-		div.caja:hover {
-			animation: 10s cambioColor 1;
-		}
-
-		@keyframes cambioColor {
-			25% {
-				background-color: purple
-			}
-
-			75% {
-				background-color: pink
-			}
-
-			100% {
-				background-color: red
-			}
-		}		
-
-/*		@keyframes cambioColor {
-			from {
-				background-color: blue
-			}
-
-			to {
-				background-color: green
-			}
+/*		div:hover {
+			animation: 1s flash 3;
 		}*/
 
-	</style>
+		@keyframes flash {
+			20% {
+				opacity:0;
+			}
 
+			40% {
+				opacity:1;
+			}
+
+			60% {
+				opacity:0;
+			}
+		}
+
+	</style>
 </head>
 <body>
 
-	<div class="caja"></div>
+	<div class="caja">Flash</div>
 
 </body>
 </html>
