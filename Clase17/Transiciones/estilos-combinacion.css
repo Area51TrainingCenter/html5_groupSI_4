@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+}
+div.contenedor {
+	width:400px;
+	height: 500px;
+	margin:20px auto;
+	background-color: skyblue;
+	padding:1px;
+	position: relative;
+}
+
+div.cabeza {
+	width: 350px;
+	height: 450px;
+	margin:50px auto 0 auto;
+	background-color: yellow;
+	position: relative;
+	border-radius: 80px 80px 0 0;
+	border-color:black;
+	border-style: solid;
+	border-width: 2px 2px 0 2px;
+	z-index:1000;
+	transition: all 1s;
+}
+
+div.ojo {
+	width:60px;
+	height: 60px;
+	position:absolute;
+	top: 130px;
+	background-color: white;
+	border-radius:30px;
+	overflow: hidden;
+	transition: all 1s;
+	margin-top:-30px;
+}
+
+div.ojo.izq {
+	left:70px;
+}
+
+div.ojo.der {
+	right:70px;
+}
+
+div.ojo div.pupila {
+	width:15px;
+	height: 15px;
+	background-color: black;
+	border-radius:7.5px;
+	margin-top: 22.5px;
+	margin-left:22.5px;
+}
+
+div.pelo {
+	position:absolute;
+	width:60px;
+	height:60px;
+	background-color: transparent;
+	top: 30px;
+	border-radius: 30px;
+	border-color:black;
+	border-width:2px;
+	border-style: solid;
+	z-index:5;
+}
+
+div.pelo.izq {
+	left:145px;
+}
+
+div.pelo.der {
+	right:145px;
+}
+
+div.contenedor:hover div.cabeza {
+	background-color: orange;
+}
+
+div.contenedor:hover div.ojo {
+	height: 0;
+}
