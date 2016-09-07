@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+		div {
+			top:0px;
+			width:400px;
+			height: 200px;
+			animation: mover 2.5s linear 2s forwards;
+			/*nombre, duración, función, retardo, iteración, dirección, modo*/
+			background-color: red;
+			position: relative
+		}
+
+
+		@keyframes mover {
+			0% {
+				top:0px;
+				left:0px;
+			}
+
+			25% {
+				top: 600px;
+				left:0px;
+			}
+
+			50% {
+				top:600px;
+				left:600px;
+			}
+
+			75% {
+				top:0px;
+				left:600px;
+			}
+
+			100% {
+				top:0px;
+				left:300px;
+			}
+
+
+
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div></div>
+
+</body>
+</html>
