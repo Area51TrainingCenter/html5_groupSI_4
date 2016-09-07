@@ -13,6 +13,10 @@
 			display: block;
 			background-color: skyblue;
 			overflow: hidden;
+			background-image: url(edificios.gif);
+			background-repeat: repeat-x;
+			background-position: 0 center;
+			animation: oscurecer 6s linear infinite alternate;
 		}
 		div.personaje {
 			width:120px;
@@ -20,6 +24,12 @@
 			background-image: url(personaje.png);
 			animation: moverPosicion 1s steps(8) infinite,
 					   caminar 4s linear infinite;
+		}
+
+		@keyframes oscurecer {
+			100% {
+				background-color: black;
+			}
 		}
 
 		@keyframes caminar {
