@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	a.contenedor {
+		display: block;
+		width:300px;
+		height:250px;
+		margin:50px auto;
+		border:1px solid black;
+		position: relative;
+		overflow: hidden;
+	}
+
+	div.fondo {
+		width:300px;
+		height: 250px;
+		position: absolute;
+		top:0;
+		left:0;
+		animation: moverFondo 1.5s ease-in;
+		background-color: red;
+		transform-origin: left bottom;
+		text-align: center
+	}
+
+	div.payaso {
+		position: absolute;
+		left:30px;
+		bottom: -100px;
+		animation: moverPayaso 2s linear;
+	}
+
+	@keyframes moverPayaso {
+		0%, 75% {
+			bottom: -400px;
+		}
+
+
+	}
+
+	@keyframes moverFondo {
+		0% {
+			transform: translateX(-600px) skewX(-30deg);
+		}
+
+		25% {
+			transform: translateX(0px) skewX(-30deg);
+		}
+
+		50% {
+			transform:  translateX(0px) skewX(15deg)
+		}
+
+		75% {
+			transform: translateX(0px) skewX(-5deg);
+		}
+
+
+	}
+	</style>
+</head>
+<body>
+
+	<a class="contenedor" href="http://www.google.com">
+		<div class="fondo">
+			<img src="logo.png">
+			<div class="payaso">
+				<img src="payaso.gif">
+			</div>
+		</div>
+	</a>
+
+</body>
+</html>
