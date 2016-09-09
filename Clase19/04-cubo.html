@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	div.contenedor {
+		position: absolute;
+		perspective: 2000px;
+	}
+	div.grupoCaras {
+		position: absolute;
+		top:100px;
+		left:0px;
+		width:1100px;
+		transform-style: preserve-3d;
+		animation: girar 5s linear infinite;
+	}
+
+	@keyframes girar {
+		0% {
+			transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		}
+
+		100% {
+			transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+		}
+	}
+
+	div.cara {
+		width:350px;
+		height: 350px;
+		position: absolute;
+		top:100px;
+		left:400px;
+	}
+
+	div.cara1 {
+		background-color: red;
+		transform: translateZ(-175px);
+	}
+
+	div.cara2 {
+		background-color: green;
+		transform: translateZ(175px);
+	}
+
+	div.cara3 {
+		background-color: blue;
+		transform: translateX(-175px) rotateY(-90deg);
+	}
+
+	div.cara4 {
+		background-color: yellow;
+		transform: translateX(175px) rotateY(90deg);
+	}
+
+	div.cara5 {
+		background-color: brown;
+		transform: translateY(-175px) rotateX(-90deg);
+	}
+
+	div.cara6 {
+		background-color: purple;
+		transform: translateY(175px) rotateX(90deg);
+	}
+
+
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="grupoCaras">
+			<div class="cara cara1"></div>
+			<div class="cara cara2"></div>
+			<div class="cara cara3"></div>
+			<div class="cara cara4"></div>
+			<div class="cara cara5"></div>
+			<div class="cara cara6"></div>
+		</div>
+	</div>
+</body>
+</html>

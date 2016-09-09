@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		div.caja {
+			width:100px;
+			padding:20px 40px;
+			background-color: red;
+			font-family: Arial;
+			color: white;
+			font-size: 20px;
+			text-transform: uppercase;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			margin:20px;
+			animation: girarX 4s linear infinite;
+			backface-visibility: hidden;
+		}
+
+		@keyframes girarX {
+			0% {
+				transform: perspective(200px) rotateX(0deg) ;
+			}
+
+			100% {
+				transform: perspective(200px) rotateX(360deg) ;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="caja">
+		TEXTO
+	</div>
+
+</body>
+</html>

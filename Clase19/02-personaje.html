@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body {
+			background-color: black;
+		}
+		div {
+			background-image: url(personaje.png);
+			width:120px;
+			height: 182px;
+			/*margin:50px auto;*/
+			background-color: red;
+			animation:cambiarPersonaje 1s infinite steps(8),
+					  caminar 10s linear infinite;
+		}
+
+		@keyframes cambiarPersonaje {
+			100% {
+				background-position: -960px 0;
+			}
+		}
+
+		@keyframes caminar {
+			100% {
+				transform: translateX(700px);
+			}
+		}
+	</style>
+
+</head>
+<body>
+
+	<div>
+		
+	</div>
+
+</body>
+</html>

@@ -76,6 +76,32 @@
 		animation: moverNube1 12s linear infinite;
 	}
 
+	form {
+		position: absolute;
+		width:250px;
+		height: 30px;
+		background-color: white;
+		border:1px solid #ccc;
+		top:130px;
+		right:-300px;
+		animation:moverFormulario 4s linear 5s forwards;
+	}
+
+	form input {
+		font-family: Verdana;
+		font-size:30px;
+		border:0;
+		width:100%;
+		padding:6px;
+	}
+
+	@keyframes moverFormulario {
+		100% {
+			/*transform: translateX(300px);*/
+			right:10px;
+		}
+	}
+
 	@keyframes moverNube1 {
 
 
@@ -128,6 +154,10 @@
 			<img src="cloud-1.png">
 		</div>
 		<div class="mensaje">Compre Coca Cola</div>
+
+		<form>
+			<input type="text" placeholder="Correo">
+		</form>
 
 		<div class="olaAtras"></div>
 		<div class="barco">
