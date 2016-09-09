@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: black;
+	}
+
+	div.fondo {
+		width:720px;
+		height: 300px;
+		margin:50px auto;
+		background-image: url(background.png);
+		position: relative;
+		overflow: hidden;
+	}
+
+	div.olaAtras {
+		width:100%;
+		height: 84px;
+		bottom:-10px;
+		position: absolute;
+		background-image: url(water-back.png);
+		animation: moverOlaV 1s linear infinite alternate,
+				   moverOlaH 1s linear infinite alternate;
+	}
+
+	div.olaAdelante {
+		width:100%;
+		height: 177px;
+		position: absolute;
+		bottom:-109px;
+		background-image: url(water-front.png);
+		animation:moverOla2V 1.1s linear infinite alternate,
+				   moverOlaH 1s linear infinite alternate;
+
+	}
+
+	div.barco {
+		width: 249px;
+		height: 215px;
+		left:5px;
+		bottom:8px;
+		position: absolute;
+		animation:moverBarco 2s linear;
+	}
+
+	div.barco img {
+		position:absolute;
+		bottom:0px;
+		animation: subirBajar 2s linear infinite alternate;
+	}
+
+	div.mensaje {
+		position: absolute;
+		opacity: 0;
+		top: 40px;
+		right: 20px;
+		font-family: Arial;
+		font-size: 40px;
+		font-weight: bold;
+		color:black;
+		animation:aparecer 3s forwards;
+		animation-delay: 3s;
+	}
+
+	div.nube1 {
+		position: absolute;
+		top:-30px;
+		left:730px;
+		animation: moverNube1 12s linear infinite;
+	}
+
+	@keyframes moverNube1 {
+
+
+		100% {
+			transform: translateX(-1000px);
+		}
+	}
+
+	@keyframes aparecer {
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes subirBajar {
+		0% {
+			bottom:-10px;
+		}
+	}
+
+	@keyframes moverBarco {
+		0% {
+			left: -520px;
+		}
+	}
+
+	@keyframes
+	 moverOlaV {
+		100% {
+			bottom:-5px;
+		}
+	}
+
+	@keyframes moverOla2V {
+		100% {
+			bottom:-100px;
+		}
+	}
+
+	@keyframes moverOlaH {
+		100% {
+			background-position-x: -5px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="fondo">
+		<div class="nube1">
+			<img src="cloud-1.png">
+		</div>
+		<div class="mensaje">Compre Coca Cola</div>
+
+		<div class="olaAtras"></div>
+		<div class="barco">
+			<img src="boat.png">
+		</div>
+		<div class="olaAdelante"></div>
+	</div>
+
+</body>
+</html>
