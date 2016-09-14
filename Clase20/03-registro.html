@@ -9,6 +9,7 @@
 
 <div class="container">
 	<br><br>
+	<h1 id="nombreCompleto"></h1>
 	<div class="row">
 		<div class="col-md-4">
 			<form>
@@ -33,8 +34,29 @@
 		var etiquetaApellido = document.getElementById("apellido");
 		var etiquetaBoton = document.getElementById("boton");
 
+		var etiquetaNombreCompleto = document.getElementById("nombreCompleto");
+
+		if(window.localStorage) {
+			var nombreGuardado = localStorage.nombreUsuario;
+			var apellidoGuardado = localStorage.apellidoUsuario;
+
+			etiquetaNombreCompleto.innerHTML = nombreGuardado;
+		}
+
+
+
 		etiquetaBoton.addEventListener("click", function(){
-			alert("Botón presionado");
+			// alert("Botón presionado");
+			var nombreUsuario = etiquetaNombre.value;
+			var apellidoUsuario = etiquetaApellido.value;
+
+			if(window.localStorage) {
+				localStorage.nombreUsuario = nombreUsuario;
+				localStorage.apellidoUsuario = apellidoUsuario;
+			}
+
+			document.location.reload();
+
 		});
 
 	</script>
