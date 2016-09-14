@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+}
+
+ul.escenario {
+	list-style: none;
+	padding:0;
+}
+
+li.escena {
+	width:300px;
+	height: 400px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	margin:50px;
+}
+
+div.pelicula {
+	width:300px;
+	height: 400px;
+	background-color: red;
+	transform: translateZ(-150px);
+}
+
+div.poster {
+	width: 300px;
+	height: 400px;
+	position: absolute;
+	background-color: green;
+	transform: translateZ(150px);
+}
