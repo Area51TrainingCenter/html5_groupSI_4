@@ -11,15 +11,20 @@ li.escena {
 	width:300px;
 	height: 400px;
 	perspective: 1000px;
-	transform-style: preserve-3d;
 	margin:50px;
 }
 
 div.pelicula {
 	width:300px;
 	height: 400px;
-	background-color: red;
-	transform: translateZ(-150px);
+	background-color: white;
+	transform-style: preserve-3d;
+	transform: translateZ(-150px) rotateY(0deg);
+	transition: transform .35s;
+}
+
+div.pelicula:hover{
+	transform: rotateY(-78deg);
 }
 
 div.poster {
@@ -28,4 +33,13 @@ div.poster {
 	position: absolute;
 	background-color: green;
 	transform: translateZ(150px);
+	background-image: url(poster.jpg)
+}
+
+div.info {
+	width: 300px;
+	height: 400px;
+	position: absolute;
+	background-color: yellow;
+	transform: rotateY(90deg) translateZ(150px)
 }
