@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1></h1>
+	<!-- Usando librería descargada -->
+	<script src="js/jquery-3.1.0.js"></script>
+
+	<script>
+		$(function(){
+
+/*			setTimeout(function(){
+				var fecha = new Date();
+				$("h1").html(fecha);
+			}, 1000);*/
+
+/*			function tarea(){
+				var fecha = new Date();
+				$("h1").html(fecha);
+
+				setTimeout(tarea, 1000);
+			}
+
+			setTimeout(tarea, 1000);
+ */
+
+			function tarea(){
+				var fecha = new Date();
+				$("h1").html(fecha);
+			}
+
+			setInterval(tarea, 1000);
+
+
+
+		})
+	</script>
+
+</body>
+</html>
