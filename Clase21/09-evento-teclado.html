@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1></h1>
+	<input type="text">
+
+	<!-- Usando librería descargada -->
+	<script src="js/jquery-3.1.0.js"></script>
+	<script>
+		$(function(){
+			$("input").on("keyup", function(){
+				var texto = $("input").val(); // Aquí recojo el valor de la etiqueta input
+
+				$("h1").html(texto);
+			});
+
+
+		})
+
+	</script>
+
+</body>
+</html>

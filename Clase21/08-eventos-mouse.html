@@ -9,11 +9,10 @@
 			height: 400px;
 			margin:50px auto;
 			background-color: green;
-			transition: all 1s;
-		}
-
-		.redondear {
-			border-radius: 200px;
+			font-size: 30px;
+			font-family: Tahoma;
+			color: yellow;
+			overflow: scroll
 		}
 
 	</style>
@@ -28,12 +27,10 @@
 	$(function(){
 
 		$("div").on("mouseover", function(){
-			$("div").toggleClass("redondear");
-		});
+			var fecha = new Date();
+			$("div").append(fecha+"<br>");
+		})
 
-		$("div").on("mouseout", function(){
-			$("div").toggleClass("redondear");
-		});
 
 	})
 

@@ -27,13 +27,18 @@
 	<script>
 	$(function(){
 
-		$("div").on("mouseover", function(){
+/*		$("div").on("mouseover", function(){
 			$("div").toggleClass("redondear");
 		});
 
 		$("div").on("mouseout", function(){
 			$("div").toggleClass("redondear");
+		}); */
+
+		$("div").on("mouseover mouseout click dblclick", function(){
+			$("div").toggleClass("redondear");
 		});
+
 
 	})
 
