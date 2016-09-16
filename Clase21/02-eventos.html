@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="contenedor">
+		<h1></h1>
+
+		<button id="btn">Presioname</button>
+    </div>
+
+	<!-- Usando librería descargada -->
+	<script src="js/jquery-3.1.0.js"></script>
+
+	<script>
+	$(function(){
+
+		// $("#btn") Selecciona una etiqueta con el id = "btn"
+		// $("h1") Selecciona una o más etiquetas llamadas h1
+		// $(".contenedor") Selecciona una o más etiquetas con el class="contenedor"
+
+
+		// $("button#btn") Selecciona etiqueta button que tiene el id="btn"
+		// $("div.contenedor") Selecciona la o las etiquetas div que tienen el class="contenedor"
+
+		// $("div button")
+
+		$("button").on("click", function(evt){
+			evt.preventDefault();  // Se inhibe el comportamiento por defecto del botón
+
+			$("h1").html("Curso de HTML"); // Escribe en la etiqueta h1
+
+
+		})
+
+
+
+	});
+
+	</script>
+
+</body>
+</html>

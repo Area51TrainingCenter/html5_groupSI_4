@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		div {
+			width:400px;
+			height: 400px;
+			margin:50px auto;
+			background-color: green;
+			transition: all 1s;
+		}
+
+		.redondear {
+			border-radius: 200px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div></div>
+
+	<!-- Usando librería descargada -->
+	<script src="js/jquery-3.1.0.js"></script>
+	<script>
+	$(function(){
+
+		$("div").on("mouseover", function(){
+			$("div").addClass("redondear");
+		});
+
+		$("div").on("mouseout", function(){
+			$("div").removeClass("redondear");
+		});
+
+	})
+
+	</script>
+
+
+
+</body>
+</html>
