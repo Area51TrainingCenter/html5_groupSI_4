@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="jquery.fullPage.css">
+		<link rel="stylesheet" href="animate.css">
+		<meta charset="utf8">
+		<style>
+			.fondo1 {background-image: url(bg1.jpg)}
+			.fondo2 {background-image: url(bg2.jpg)}
+			.fondo3 {background-image: url(bg3.jpg)}
+			.fondo4 {background-image: url(bg4.jpg)}
+			.fondo5 {background-image: url(bg5.jpg)}
+			.slide h2 {
+				font-family: Verdana;
+				font-size: 20px;
+				text-align: center;
+				background-color: green;
+				color:white;
+				width:40%;
+				margin:-200px auto;
+			}
+
+			ul.menu {
+				position: fixed;
+				z-index: 1000;
+				margin:0;
+				padding: 0;
+				list-style: none;
+			}
+
+			ul.menu li {
+				float:left;
+				margin-left:3px;
+				margin-right:3px;
+			}
+
+			ul.menu a {
+				display: block;
+				padding: 20px 40px;
+				font-family: Verdana;
+				font-size:25px;
+				text-transform: uppercase;
+				text-align: center;
+				background-color: red;
+				color: white;
+				font-weight: bold;
+			}
+
+			ul.menu li.active a {
+				background-color: pink;
+			}
+
+			#fp-nav ul li .fp-tooltip {
+				font-family: Tahoma;
+				font-size:25px;
+			}
+			video {
+				width:100%;
+				position: absolute;
+				top:0;
+				left:0;
+				bottom:0;
+				right:0;
+			}
+
+			article {
+				width:300px;
+				font-family: Verdana;
+				font-size: 40px;
+				text-align: center;
+				padding:30px;
+				margin:0 auto;
+				color:white;
+				background-color: green;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<ul class="menu">
+			<li data-menuanchor="seccion1"><a href="#seccion1">Sección 1</a></li>
+			<li data-menuanchor="seccion2"><a href="#seccion2">Sección 2</a></li>
+			<li data-menuanchor="seccion3"><a href="#seccion3">Sección 3</a></li>
+			<li data-menuanchor="seccion4"><a href="#seccion4">Sección 4</a></li>
+			<li data-menuanchor="seccion5"><a href="#seccion5">Sección 5</a></li>
+		</ul>
+
+		<div class="contenedor">
+			<div class="section fondo1">
+				<video autoplay muted loop>
+					<source src="flowers.mp4" type="video/mp4">
+					<source src="flowers.webm" type="video/webm">
+				</video>
+			</div>
+			<div class="section fondo2">
+				<div class="slide"><h2>Slide1</h2></div>
+				<div class="slide"><h2>Slide2</h2></div>
+				<div class="slide"><h2>Slide3</h2></div>
+				<div class="slide"><h2>Slide4</h2></div>
+
+			</div>
+			<div class="section fondo3">
+				<article class="animated">
+					Sección 3
+				</article>
+
+			</div>
+			<div class="section fondo4"></div>
+			<div class="section fondo5"></div>
+		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="jquery.fullPage.js"></script>
+
+		<script>
+			$(function(){
+				$(".contenedor").fullpage(
+					{
+						sectionsColor: ["blue", "green", "yellow", "orange", "magenta"],
+						anchors: ["seccion1", "seccion2", "seccion3", "seccion4", "seccion5"],
+						navigation: true,
+						menu: ".menu",
+						navigationPosition: "left",
+						navigationTooltips: ["Sección 1", "Sección 2", "Sección 3", "Sección 4", "Sección 5"],
+						afterLoad: function(anchorLink, index){
+							if(index==3){
+								$("article").addClass("hinge");
+							} else {
+								$("article").removeClass("hinge");
+							}
+						}
+					}
+				);
+			})
+		</script>
+
+	</body>
+</html>
