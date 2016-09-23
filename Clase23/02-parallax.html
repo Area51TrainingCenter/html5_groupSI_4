@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<style>
+			body {
+				margin:0;
+				padding:0;
+			}
+			div.contenedor {
+				width:100%;
+				height: 4000px;
+			}
+
+			div.ventana {
+				position: fixed;
+				width:400px;
+				height: 300px;
+				top:50px;
+				left:200px;
+				background: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="contenedor">
+			<div class="ventana" 
+			data-0="width:400px" 
+			data-600="width:800px" 
+			data-800="width:300px"></div>
+		</div>
+
+
+    <script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+    	skrollr.init();
+    </script>
+	</body>
+
+</html>
