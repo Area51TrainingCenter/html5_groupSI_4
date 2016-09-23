@@ -4,9 +4,10 @@
 		<meta charset="utf8">
 		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+		<link rel="stylesheet" href="animate.css">
 		<style>
 		body {
-			background-color: black;
+			background-color: green;
 		}
 			div.banners {
 				width:800px;
@@ -17,14 +18,66 @@
 				color:green;
 				margin:20px auto;
 			}
+			div.fondo {
+				height: 400px;
+			}
+			div.fondo1 {
+				background-image: url(fondo1.jpg);
+				background-size: cover;
+			}
+			div.fondo2 {
+				background-image: url(fondo2.jpg);
+				background-size: cover;
+			}
+			div.fondo3 {
+				background-image: url(fondo3.jpg);
+				background-size: cover;
+			}	
+
+			.slick-dots {
+				bottom:0;
+			}	
+
+
+			.slick-dots li button:before {
+			    font-size: 23px;
+			    opacity: .25;
+			    color: white;
+			}	
+
+			h2 {
+				font-family: Tahoma;
+				font-size:40px;
+				padding:20px 30px;
+				background-color: white;
+				color:black;
+				font-style: italic;
+				margin: 40px 0 0 40px;
+			}
+
+			@media screen and (max-width:600px) {
+				div.banners {
+					width:100%;
+				}
+			}
+
 		</style>
 	</head>
 	<body>
 
 		<div class="banners">
-		  <div>your content</div>
-		  <div>your content</div>
-		  <div>your content</div>
+		  <div class="fondo fondo1">
+		  	<h2 class="animated">Título 1</h2>
+		  </div>
+		  <div class="fondo fondo2">
+		  	<h2 class="animated">Título 2</h2>
+		  </div>
+		  <div class="fondo fondo3">
+		  	<h2 class="animated">Título 3</h2>
+		  </div>
+		  <div class="fondo fondo2">
+		  	<h2 class="animated">Título 4</h2>
+		  </div>
 		</div>
 
 
@@ -34,7 +87,44 @@
 
 		<script>
 			$(function(){
-				$(".banners").slick();
+				$(".banners").on("init", function(slick, currentSlide){
+					$(".slick-active h2").addClass("bounceInRight");
+				});
+
+				$(".banners").on("afterChange", function(slick, currentSlide){
+					console.log(slick);
+					if(currentSlide.currentSlide==0) {
+						$(".slick-active h2").addClass("bounceInLeft");
+					}
+				});
+				$(".banners").on("beforeChange", function(slick, currentSlide){
+					console.log(slick);
+					if(currentSlide.currentSlide==0) {
+						$(".slick-active h2").removeClass("bounceInLeft");
+					}
+				});
+
+
+				$(".banners").slick(
+					{
+						arrows: true, //Indica si se muestran o no las flechas
+						dots: true, //Indica si se muestran los botones de navegación
+						infinite: true, // Indica que habrá un carrusel
+						slidesToShow: 1, //Indica cuántos banners se mostrarán
+						slidesToScroll: 1,
+						autoplay: true, //Pasa automáticamente los banners
+						autoplaySpeed: 4000, //Tiempo entre banner y banner
+						responsive: [
+							{
+								breakpoint:600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							}
+						]
+					}
+				);
 			})
 		</script>
 		
