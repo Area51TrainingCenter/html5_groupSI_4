@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin:0;
+				padding:0;
+				background-color: black;
+			}
+
+			div.contenedor {
+				margin:150px auto;
+				width:200px;
+				height: 200px;
+			}
+
+			div.contenedor a.item {
+				width:200px;
+				height: 200px;
+				position: absolute;
+				display: block;
+				background-color:green;
+				z-index:1;
+				transform-origin: center bottom;
+				transition: all .4s ease-in-out;
+			}
+
+			div.contenedor a.item.item1 {
+				z-index: 1;
+			}
+			div.contenedor a.item.item2 {
+				z-index: 3;
+			}
+			div.contenedor a.item.item3 {
+				z-index: 2;
+			}
+
+			div.contenedor:hover a.item.item1 {
+				transform: rotate(-30deg);
+			}
+
+			div.contenedor:hover a.item.item3 {
+				transform: rotate(30deg);
+			}
+		</style>
+	</head>
+	<body>
+		
+
+		<div class="contenedor">
+			<a href="#" class="item item1"><img src="imagen01.jpg"></a>
+			<a href="#" class="item item2"><img src="imagen02.jpg"></a>
+			<a href="#" class="item item3"><img src="imagen03.jpg"></a>
+		</div>
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>

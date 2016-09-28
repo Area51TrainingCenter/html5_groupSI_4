@@ -9,6 +9,7 @@
 			body {
 				margin:0;
 				padding:0;
+				background-color: black;
 			}
 
 			div.contenedor {
@@ -23,6 +24,8 @@
 				position: absolute;
 				display: block;
 				background-color:green;
+				z-index:1;
+				transition: all .4s ease-in-out;
 			}
 			div.contenedor a.item.izq-0 {
 				transform: translateX(-660px);
@@ -39,6 +42,7 @@
 			
 			div.contenedor a.item.medio {
 				transform: translateX(0px) scale(2);
+				z-index:10;
 			}
 
 			div.contenedor a.item.der-2 {
@@ -59,14 +63,53 @@
 		
 
 		<div class="contenedor">
-			<a href="#" class="item izq-0"><img src="imagen01.jpg"></a>
-			<a href="#" class="item izq-1"><img src="imagen02.jpg"></a>
-			<a href="#" class="item izq-2"><img src="imagen03.jpg"></a>
-			<a href="#" class="item medio"><img src="imagen04.jpg"></a>
-			<a href="#" class="item der-2"><img src="imagen05.jpg"></a>
-			<a href="#" class="item der-1"><img src="imagen06.jpg"></a>
-			<a href="#" class="item der-0"><img src="imagen07.jpg"></a>
+			<a href="#" class="item"><img src="imagen01.jpg"></a>
+			<a href="#" class="item"><img src="imagen02.jpg"></a>
+			<a href="#" class="item"><img src="imagen03.jpg"></a>
+			<a href="#" class="item"><img src="imagen04.jpg"></a>
+			<a href="#" class="item"><img src="imagen05.jpg"></a>
+			<a href="#" class="item"><img src="imagen06.jpg"></a>
+			<a href="#" class="item"><img src="imagen07.jpg"></a>
 		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+			$(function(){
+				var listaClases = ['izq-0','izq-1','izq-2','medio','der-2','der-1','der-0'];
+				var elementos = $(".item");
+				var num = elementos.length;
+
+				function asignar(){
+					elementos.each(function(indice){
+						$(this).addClass( listaClases[indice] );
+					});
+				}
+
+				function quitar(){
+					elementos.removeClass("izq-0 izq-1 izq-2 medio der-2 der-1 der-0");
+				}
+
+				function mover(){
+					var elementoEliminado = listaClases.shift();
+					listaClases.push(elementoEliminado);
+
+					quitar();
+					asignar();
+				}
+
+				asignar();
+
+				setInterval(function(){ mover(); }, 4000);
+			})
+		</script>
+
+
+
+
+
+
+
+
 
 	</body>
 </html>
