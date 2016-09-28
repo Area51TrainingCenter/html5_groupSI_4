@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin:0;
+				padding:0;
+			}
+
+			div.contenedor {
+				margin:150px auto;
+				width:200px;
+				height: 200px;
+			}
+
+			div.contenedor a.item {
+				width:200px;
+				height: 200px;
+				position: absolute;
+				display: block;
+				background-color:green;
+			}
+			div.contenedor a.item.izq-0 {
+				transform: translateX(-660px);
+				opacity:0;
+			}
+
+			div.contenedor a.item.izq-1 {
+				transform: translateX(-440px);
+			}
+
+			div.contenedor a.item.izq-2 {
+				transform: translateX(-220px);
+			}
+			
+			div.contenedor a.item.medio {
+				transform: translateX(0px) scale(2);
+			}
+
+			div.contenedor a.item.der-2 {
+				transform: translateX(220px);
+			}
+
+			div.contenedor a.item.der-1 {
+				transform: translateX(440px);
+			}
+
+			div.contenedor a.item.der-0 {
+				transform: translateX(660px);
+				opacity:0;
+			}
+		</style>
+	</head>
+	<body>
+		
+
+		<div class="contenedor">
+			<a href="#" class="item izq-0"><img src="imagen01.jpg"></a>
+			<a href="#" class="item izq-1"><img src="imagen02.jpg"></a>
+			<a href="#" class="item izq-2"><img src="imagen03.jpg"></a>
+			<a href="#" class="item medio"><img src="imagen04.jpg"></a>
+			<a href="#" class="item der-2"><img src="imagen05.jpg"></a>
+			<a href="#" class="item der-1"><img src="imagen06.jpg"></a>
+			<a href="#" class="item der-0"><img src="imagen07.jpg"></a>
+		</div>
+
+	</body>
+</html>
